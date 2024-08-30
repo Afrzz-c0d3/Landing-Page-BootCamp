@@ -448,34 +448,41 @@ section {
   color: rgba(106, 64, 41, 1);
 }
 
+/* search */
+
 .search-container {
-  position: absolute; /* Menggunakan fixed agar tetap di tempat saat scroll */
-  top: 180px; /* Mengatur jarak dari atas */
-  right: 130px; /* Mengatur jarak dari kanan */
-  width: 300px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 300px; /* Adjust the width as needed */
+  bottom: 34rem;
+  left: 62rem;
 }
 
-.search-container input[type="search"] {
+.search-input {
   width: 100%;
-  padding: 15px 20px 15px 40px; /* Padding untuk membuat ruang ikon di sebelah kiri */
-  border-radius: 30px;
-  border: 1px solid rgba(239, 238, 238, 1);
-  outline: none;
+  padding: 10px 40px 10px 40px; /* Padding adjusted for the icon */
+  border-radius: 25px;
+  border: 1px solid #ccc;
   font-size: 16px;
 }
 
-.search-container .icon {
+.search-icon {
   position: absolute;
+  left: 10px; /* Adjust the position of the icon */
   top: 50%;
-  left: 10px;
   transform: translateY(-50%);
-  width: 20px;
-  height: 20px;
-  pointer-events: none; /* Agar ikon tidak mengganggu input */
 }
 
+.search-icon img {
+  width: 20px; /* Adjust the size of the icon */
+  height: 20px;
+}
+
+/* search */
+
 .body-home {
-  padding-top: 60px;
+  padding-top: 10px;
 }
 
 .info-container {
