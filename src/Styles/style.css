@@ -750,7 +750,7 @@ section {
   align-items: center;
   justify-content: center;
   width: 80%;
-  padding: 10rem 50px 1rem 50px;
+  padding: 7rem 50px 5rem 50px;
 }
 
 .membership-promo {
@@ -854,3 +854,113 @@ section {
   font-weight: bold;
   padding-bottom: 300px;
 }
+
+/* Card Rating */
+
+.rating-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0px 200px 0px;
+  width: 100%;
+  gap: 30px;
+  position: relative;
+}
+
+.card-rating {
+  max-width: 500px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  padding: 16px 10px 16px 10px;
+  min-height: 230px;
+}
+
+.rating-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding : 20px;
+}
+
+.rating-img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 16px;
+}
+
+.rating-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.rating-location {
+  font-size: 0.875rem;
+  color: gray;
+  margin-top: 4px;
+}
+
+.rating-card {
+  display: flex;
+  align-items: center;
+  margin-left: auto; /* Membuat rating berada di sebelah kanan */
+}
+
+.star {
+  color: #FFC107; /* Warna kuning untuk bintang */
+  font-size: 1.25rem;
+}
+
+.rating-value {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-left: 4px;
+}
+
+.rating-description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  font-size: 1.125rem;
+  color: #4A4A4A;
+  line-height: 1.5;
+}
+
+.pagination {
+  position: absolute;
+  bottom: 100px;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+}
+
+.page-indicator {
+  font-size: 1rem;
+  color: gray;
+}
+
+.arrow-left, .arrow-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 2rem;
+}
+
+.arrow-left:hover, .arrow-right:hover {
+  border-color: rgba(0, 0, 0, 0.4);
+  color: rgba(0, 0, 0, 0.8);
+}
+
